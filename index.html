@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Eva ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<!-- PASSWORD PAGE -->
+
+<section id="lockScreen" class="page active">
+
+<div class="glass">
+
+<h1>💖</h1>
+
+<h2>A Little Surprise For Eva</h2>
+
+<p>
+Only the birthday girl can unlock this surprise.
+</p>
+
+<input
+id="password"
+type="password"
+placeholder="Enter Password">
+
+<button onclick="unlock()">
+Unlock My Surprise
+</button>
+
+<p id="wrong"></p>
+
+</div>
+
+</section>
+
+<!-- LETTER PAGE -->
+
+<section id="letterPage" class="page">
+
+<div class="letter">
+
+<h1>Dear Eva ❤️</h1>
+
+<div id="typewriter"></div>
+
+<button onclick="showGallery()">
+Open Our Memories ❤️
+</button>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="galleryPage" class="page">
+
+<h1 class="title">
+Our Beautiful Memories ❤️
+</h1>
+
+<div class="gallery">
+
+<div class="card">
+<img src="images/eva1.jpg">
+<p>Beautiful Smile</p>
+</div>
+
+<div class="card">
+<img src="images/eva2.jpg">
+<p>Forever Beautiful</p>
+</div>
+
+<div class="card">
+<img src="images/eva3.jpg">
+<p>You Make My World Better</p>
+</div>
+
+<div class="card">
+<img src="images/eva4.jpg">
+<p>Always Amazing</p>
+</div>
+
+<div class="card">
+<img src="images/eva5.png">
+<p>Keep Smiling</p>
+</div>
+
+<div class="card">
+<img src="images/together.jpg">
+<p>Our Favourite Memory ❤️</p>
+</div>
+
+</div>
+
+<button class="nextButton"
+onclick="finalPage()">
+
+Final Surprise 🎂
+
+</button>
+
+</section>
+
+<!-- FINAL PAGE -->
+
+<section id="finalScreen" class="page">
+
+<div class="birthday">
+
+<h1>
+
+🎉 Happy Birthday Eva ❤️
+
+</h1>
+
+<h2>
+
+May all your dreams come true.
+
+</h2>
+
+<p>
+
+May this year bring endless happiness,
+
+success,
+
+peace,
+
+beautiful memories,
+
+and countless reasons to smile.
+
+You deserve every happiness in the world.
+
+❤️
+
+</p>
+
+<div class="cake">
+
+🎂
+
+</div>
+
+<button onclick="location.reload()">
+
+Replay Surprise ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<audio
+id="music"
+loop>
+
+<source src="audio/birthday.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
